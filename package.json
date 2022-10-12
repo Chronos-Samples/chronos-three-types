@@ -6,8 +6,8 @@
     "scripts": {
         "prepare": "husky install",
         "test-all": "node node_modules/@definitelytyped/dtslint-runner/dist/index.js --path .",
-        "test": "node node_modules/@definitelytyped/dtslint/dist/index.js types/three",
-        "lint": "node node_modules/@definitelytyped/dtslint/dist/index.js types/three",
+        "test": "node node_modules/@definitelytyped/dtslint/dist/index.js ./",
+        "lint": "node node_modules/@definitelytyped/dtslint/dist/index.js ./",
         "prettier:write": "prettier --write .",
         "prettier:check": "prettier --check .",
         "contributors:add": "all-contributors add"
