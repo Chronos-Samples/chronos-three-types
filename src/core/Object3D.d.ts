@@ -45,6 +45,12 @@ export class Object3D<E extends BaseEvent = Event> extends EventDispatcher<E> {
     parent: Object3D | null;
 
     /**
+     * Scene object attached to.
+     * @default null
+     */
+    scene: Object3D | null;
+
+    /**
      * Array with object's children.
      * @default []
      */
