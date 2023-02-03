@@ -134,10 +134,27 @@ export class Object3D<E extends BaseEvent = Event> extends EventDispatcher<E> {
     layers: Layers;
 
     /**
-     * Object gets rendered if true.
+     * Map of visibility layers
+     */
+    visibilityMap: Map<string, boolean>;
+
+    /**
+     * Set if object should be rendered (default visibility layer).
+     */
+    set visible(value: boolean);
+
+    /**
+     * Get if object should be rendered.
      * @default true
      */
-    visible: boolean;
+    get visible(): boolean;
+
+    /**
+     * Set if object should be rendered (specific visibility layer).
+     * @param key - visibility layer
+     * @param value - is visible
+     */
+    setVisibility(key: string, value: boolean): void;
 
     /**
      * Gets rendered into shadow map.

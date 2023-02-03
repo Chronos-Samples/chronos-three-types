@@ -9,7 +9,7 @@ export class Event implements BaseEvent {
     /**
      * Creates event object.
      **/
-    constructor(eventData: { type: string } & {[prop:string]: any}, options?: EventOptions);
+    constructor(eventData: { type: string } & { [prop: string]: any }, options?: EventOptions);
 
     type: string;
     target?: any;
