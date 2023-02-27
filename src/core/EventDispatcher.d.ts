@@ -13,6 +13,7 @@ export class Event implements BaseEvent {
 
     type: string;
     target?: any;
+    private path: Array<EventDispatcher> | null;
     [attachment: string]: any;
     stopQueue: () => void;
     stopBubbling: () => void;
